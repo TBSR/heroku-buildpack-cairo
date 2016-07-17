@@ -1,4 +1,4 @@
-FROM mojodna/cedar-14-stack
+FROM nandub/cedar-14-stack
 
 ENV DEBIAN_FRONTEND noninteractive
 
