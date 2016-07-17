@@ -42,15 +42,15 @@ function vendor() {
 }
 
 echo "-----> Vendoring binaries"
-vendor "https://dl.bintray.com/tbsr/myfiles/:cairo-1.14.6-1.tar.gz"  "$BUILD_DIR/vendor/cairo"
-vendor "https://dl.bintray.com/tbsr/myfiles/:freetype-2.6-1.tar.gz" "$BUILD_DIR/vendor/freetype"
-vendor "https://dl.bintray.com/tbsr/myfiles/:giflib-5.1.4-1.tar.gz"   "$BUILD_DIR/vendor/giflib"
-vendor "https://dl.bintray.com/tbsr/myfiles/:pixman-0.34.0-1.tar.gz"  "$BUILD_DIR/vendor/pixman"
+vendor "https://dl.bintray.com/tbsr/myfiles/cairo-1.14.6-1.tar.gz"  "$BUILD_DIR/vendor/cairo"
+vendor "https://dl.bintray.com/tbsr/myfiles/freetype-2.6-1.tar.gz" "$BUILD_DIR/vendor/freetype"
+vendor "https://dl.bintray.com/tbsr/myfiles/giflib-5.1.4-1.tar.gz"   "$BUILD_DIR/vendor/giflib"
+vendor "https://dl.bintray.com/tbsr/myfiles/pixman-0.34.0-1.tar.gz"  "$BUILD_DIR/vendor/pixman"
 
 if [ $STACK == "cedar-14" ]; then
-  vendor "https://dl.bintray.com/tbsr/myfiles/:pango-1.40.1-1.tar.gz"  "$BUILD_DIR/vendor/pango"
-  vendor "https://dl.bintray.com/tbsr/myfiles/:harfbuzz-1.2.7-1.tar.gz"  "$BUILD_DIR/vendor/harfbuzz"
-  vendor "https://dl.bintray.com/tbsr/myfiles/:fontconfig-2.12.0-1.tar.gz"  "$BUILD_DIR/vendor/fontconfig"
+  vendor "https://dl.bintray.com/tbsr/myfiles/pango-1.40.1-1.tar.gz"  "$BUILD_DIR/vendor/pango"
+  vendor "https://dl.bintray.com/tbsr/myfiles/harfbuzz-1.2.7-1.tar.gz"  "$BUILD_DIR/vendor/harfbuzz"
+  vendor "https://dl.bintray.com/tbsr/myfiles/fontconfig-2.12.0-1.tar.gz"  "$BUILD_DIR/vendor/fontconfig"
 else
   echo
   echo "-----> WARNING <-----"
